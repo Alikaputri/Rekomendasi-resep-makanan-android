@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="example.com.rekomresepmasakan">
+    
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".menu"/>
+        <activity android:name=".splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".bahan1"/>
+        <activity android:name=".bahan2"/>
+        <activity android:name=".bahan3"/>
+        <activity android:name=".bahan4"/>
+        <activity android:name=".bahan5"/>
+        <activity android:name=".bahan6"/>
+        <activity android:name=".bahan7"/>
+        <activity android:name=".bahan8"/>
+        <activity android:name=".bahan9"/>
+        <activity android:name=".bahan10"/>
+        <activity android:name=".bahan11"/>
+        <activity android:name=".bahan12"/>
+        <activity android:name=".bahan13"/>
+        <activity android:name=".bahan14"/>
+        <activity android:name=".bahan15"/>
+        <activity android:name=".resep1"/>
+        <activity android:name=".about"/>
+    </application>
+
+</manifest>

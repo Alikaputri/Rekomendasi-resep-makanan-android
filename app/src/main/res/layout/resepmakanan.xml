@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/resep"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/gambar"
+                android:layout_width="match_parent"
+                android:layout_height="248dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/nm_mkn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/gambar"
+                android:layout_alignStart="@+id/gambar"
+                android:layout_below="@+id/gambar"
+                android:layout_marginTop="15sp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:text="-"
+                android:textAlignment="center"
+                android:textSize="26dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/asal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nm_mkn"
+                android:layout_alignStart="@+id/nm_mkn"
+                android:layout_below="@+id/nm_mkn"
+                android:layout_marginTop="15sp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:text="Asal:"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/ket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/asal"
+                android:layout_alignStart="@+id/asal"
+                android:layout_below="@+id/asal"
+                android:layout_marginTop="15sp"
+                android:layout_margin="10dp"
+                android:text="Ket:"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/bhn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ket"
+                android:layout_alignStart="@+id/ket"
+                android:layout_below="@+id/ket"
+                android:layout_marginTop="15sp"
+                android:layout_margin="10dp"
+                android:text="Bahan:"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/cara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/bhn"
+                android:layout_alignStart="@+id/bhn"
+                android:layout_below="@+id/bhn"
+                android:layout_marginTop="15sp"
+                android:layout_margin="10dp"
+                android:text="Cara Membuatnya:"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/cara"
+                android:layout_alignStart="@+id/cara"
+                android:layout_below="@+id/cara"
+                android:layout_marginTop="15sp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:text="Video Selengkapnya:"
+                android:textSize="14dp" />
+            <TextView
+                android:id="@+id/sumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/next"
+                android:layout_alignStart="@+id/next"
+                android:layout_below="@+id/next"
+                android:layout_marginTop="15sp"
+                android:layout_margin="10dp"
+                android:text="Sumber Video:"
+                android:textSize="14dp" />
+            <WebView
+                android:id="@+id/video"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center">
+            </WebView>
+
+            <TextView
+                android:id="@+id/selamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/video"
+                android:layout_alignStart="@+id/video"
+                android:layout_below="@+id/video"
+                android:layout_marginTop="15sp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:text="-SELAMAT MENCOBA-"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
